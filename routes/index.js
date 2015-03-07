@@ -35,26 +35,27 @@ router.get('/user', function(req, res, next) {
         } , function( validateError, validateResponse, validateBody ) {
             var user = validateBody
             console.log(validateBody);
+
+            request({
+                url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Patient/a101",
+                method: "GET",
+                json: true,
+                headers: {
+                    'Authorization': "Bearer " + accessToken,
+
+                },
+                //body: {username: "sam.s.smith", password: "MyFood4Health!"}
+            } , function( validateError, validateResponse, validateBody ) {
+                var user = validateBody
+                console.log(validateBody);
+                res.json(user);
+                
+            })
             res.json(user);
             
         })
         
-        var accessToken = validateBody.access_token
-        request({
-            url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Patient/a101",
-            method: "GET",
-            json: true,
-            headers: {
-                'Authorization': "Bearer " + accessToken,
-
-            },
-            //body: {username: "sam.s.smith", password: "MyFood4Health!"}
-        } , function( validateError, validateResponse, validateBody ) {
-            var user = validateBody
-            console.log(validateBody);
-            res.json(user);
-            
-        })
+        
     })
 });
 
