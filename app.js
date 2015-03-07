@@ -66,3 +66,10 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+var http = require('http');
+var server = http.createServer(app);
+var port = process.env.PORT || 5000;
+server.listen(port);
+console.log('Listening on http://localhost:' + port);
+
