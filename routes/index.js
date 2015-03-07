@@ -11,14 +11,25 @@ router.get('/', function(req, res, next) {
         headers: {
             'Authorization': "Basic RFJDWUpFYnFQSUJiMmJOZURlSlcyR3V3QTNDUTFqaHk6cHJQTHIzYjJHRktVVFVacw==",
         },
-        //body: JSON.stringify({username: "sam.s.smith", password: "MyFood4Health!"})
     } , function( validateError, validateResponse, validateBody ) {
-        //var validationDetails = JSON.parse( validateBody );
-        console.log(validateBody);
-        //console.log(JSON.stringify({username: "sam.s.smith", password: "MyFood4Health!"}));
-        //console.log(validateBody);
+        var accessToken = validateBody.access_token
+        console.log(accessToken);
+        request({
+            url: "https://gateway.api.pcftest.com:9004/v1/oauth2/authorize/login",
+            method: "POST",
+            json: true,
+            headers: {
+                'Authorization': "Bearer " + accessToken,
+            },
+            body: {username: "sam.s.smith", password: "MyFood4Health!"}
+        } , function( validateError, validateResponse, validateBody ) {
+            var user = validateBody
+            console.log(validateBody);
+            res.json(user);
+            
+        })
     })
-    res.render('index', { title: 'Express' });
+    
 });
 
 module.exports = router;
