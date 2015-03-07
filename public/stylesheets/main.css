@@ -1,1 +1,1 @@
-body{padding:50px;font:sans-serif}a{color:#00B7FF}
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);@import "dashboard.css";body{font-family:'Arimo',sans-serif;padding-top:70px}.chart path{stroke:steelblue;stroke-width:2;fill:none}.chart line{stroke:black}.chart text{font-size:9pt}

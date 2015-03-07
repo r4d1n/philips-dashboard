@@ -1,12 +1,26 @@
-// @import 'bootstrap-custom';
-// @import 'reset';
-
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+@import "dashboard.css";
 
 body {
-  padding: 50px;
-  font: sans-serif;
+  font-family: 'Arimo', sans-serif;
+  padding-top: 70px;
 }
 
-a {
-  color: #00B7FF;
+
+
+// first chart
+.chart {
+  path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  line {
+    stroke: black;
+  }
+
+  text {
+    font-size: 9pt;
+  }
 }
