@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.get('/user', function(req, res, next) {
     token(function( validateError, validateResponse, validateBody ) {
-        /*
+        
         var accessToken = validateBody.access_token
         request({
             url: "https://gateway.api.pcftest.com:9004/v1/oauth2/authorize/login",
@@ -38,16 +38,17 @@ router.get('/user', function(req, res, next) {
             res.json(user);
             
         })
-        */
+        
         var accessToken = validateBody.access_token
         request({
-            url: "https://gateway.api.pcftest.com:9004/v1/oauth2/authorize/login",
+            url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Patient/a101",
             method: "GET",
             json: true,
             headers: {
                 'Authorization': "Bearer " + accessToken,
+
             },
-            body: {username: "sam.s.smith", password: "MyFood4Health!"}
+            //body: {username: "sam.s.smith", password: "MyFood4Health!"}
         } , function( validateError, validateResponse, validateBody ) {
             var user = validateBody
             console.log(validateBody);
