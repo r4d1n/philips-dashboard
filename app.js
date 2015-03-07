@@ -28,7 +28,7 @@ app.use(cookieParser());
 
 app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/bower_components'));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.use('/', routes);
 app.use('/users', users);
@@ -72,4 +72,3 @@ var server = http.createServer(app);
 var port = process.env.PORT || 5000;
 server.listen(port);
 console.log('Listening on http://localhost:' + port);
-
