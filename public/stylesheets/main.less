@@ -2,6 +2,7 @@
 @import "dashboard.css";
 @import "timeline";
 
+
 body {
   font-family: 'Arimo', sans-serif;
   padding-top: 70px;
@@ -78,13 +79,33 @@ span.timeline-label {
   font-color: #666;
 }
 
+.modal-backdrop.in {
+  opacity: 0.9;
+}
+
 .modal-content {
-  img {
+  .xray-item {
     width: 50%;
+    margin: 0 auto;
     float: left;
-    padding: 50px 25px;
+    img {
+      width: 100%;
+      margin: 0 auto;
+      padding: 25px;
+      clear: right;
+    }
+    .modal-label {
+      padding: 10px;
+      width: 150px;
+      margin: 0 auto;
+      text-align: center;
+      color: #ff0000;
+      font-weight: 700;
+      font-size: 24px;
+    }
   }
 }
+
 
 #chart1, #chart2 {
   .dimple-axis {
