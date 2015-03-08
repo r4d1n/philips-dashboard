@@ -60,7 +60,7 @@ $(document).ready(function() {
     // yTemperatureAxis.tickFormat = ',.1f';
     yTemperatureAxis.overrideMin = 95;
     o2Axis.overrideMin = 75;
-    var temperatureSeries = chart.addSeries("Temperature", dimple.plot.line, [xAxis, yTemperatureAxis]);
+    var temperatureSeries = chart.addSeries("Temp", dimple.plot.line, [xAxis, yTemperatureAxis]);
     var o2Series = chart.addSeries("O2", dimple.plot.line, [xAxis, o2Axis]);
     temperatureSeries.lineMarkers = true;
     o2Series.lineMarkers = true;
@@ -68,10 +68,13 @@ $(document).ready(function() {
     o2Axis.title = "O2";
 
     xAxis.title = "Time";
-    chart.addLegend(60,5,120,10,"right",temperatureSeries);
-    chart.addLegend(120,5,120,10,"right",o2Series);
+    chart.addLegend(80,5,120,10,"right",temperatureSeries);
+    chart.addLegend(140,5,120,10,"right",o2Series);
 
     chart.draw();
+
+    svg.selectAll('circle')
+    .attr('r', 10);
   })();
 
   (function secondChart () {
@@ -93,9 +96,12 @@ $(document).ready(function() {
     yWbcAxis.overrideMax = 14;
     yWbcAxis.title = "WBC Count";
     xAxis.title = "Time";
-    chart.addLegend(60,5,120,10,"right",wbcSeries);
+    chart.addLegend(80,5,120,10,"right",wbcSeries);
 
     chart.draw();
+
+    svg.selectAll('circle')
+    .attr('r', 10);
   })();
 
   (function timeline () {
@@ -113,30 +119,15 @@ $(document).ready(function() {
     var eventAxis = chart.addMeasureAxis("y", "therapyValue");
     var eventSeries = chart.addSeries(null, dimple.plot.line, [xAxis, eventAxis]);
     eventSeries.lineMarkers = true;
+    // eventAxis.position = .5;
     eventAxis.hidden = true;
     xAxis.hidden = true;
     xAxis.title = "Time";
     chart.setBounds(60, 25, 700, 50);
-    // chart.assignColor('therapyValue', '#333', '#999', 1)
     chart.draw();
+
+    svg.selectAll('circle')
+    .attr('r', 20);
   })();
 
 }) // document ready
-
-// $('#imgModal').on('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget); // Button that triggered the modal
-//   var modal = $(this);
-//   // Extract info from data-* attributes
-//   var title = button.data('title');
-//   var id = button.data('id');
-//   // Write into modal
-//   modal.find('.modal-title').text('Delete ' + title);
-//   modal.find('.modal-body').text('Are you sure you want to remove ' + title + ' from the library?');
-//   // Delete a book
-//   $('.delete-button').click(function() {
-//     $.post('/books/' + id + '/delete/', function(res) {
-//       window.location.reload();
-//     })
-//     return false;
-//   }); // end delete button
-// }); // end delete modal

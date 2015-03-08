@@ -32,7 +32,6 @@ ul.nav-sidebar {
 .chart {
   width: 800px;
   margin: 0 auto;
-  font-size: 20px;
 }
 
 div:not(#timeline) {
@@ -49,13 +48,25 @@ div:not(#timeline) {
   height: 100px;
   path, circle {
     stroke: #666;
+    fill: #999;
   }
+
   svg {
     g {
       stroke: #666;
 
       padding-top: 15px;
     }
+  }
+}
+
+#chart2 {
+  path,circle {
+    stroke: #33FF33;
+  }
+  rect.dimple-legend {
+    fill: #33FF33!important;
+    stroke: #33FF33!important;
   }
 }
 
@@ -72,5 +83,17 @@ span.timeline-label {
     width: 50%;
     float: left;
     padding: 50px 25px;
+  }
+}
+
+#chart1, #chart2 {
+  .dimple-axis {
+    font-size: 20px!important;
+    text {
+      font-size: 20px!important;
+    }
+  }
+  text {
+    font-size: 14px!important;
   }
 }
