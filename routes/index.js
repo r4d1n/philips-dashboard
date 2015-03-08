@@ -3,12 +3,12 @@ var router = express.Router();
 var request = require('request');
 var accessToken;
 var users = {
-        "sam.s.smith" : {pwd : "MyFood4Health!", patientId : "a101"},
-        "nancy.anderson" : {pwd : "OneHabit,2beU", patientId : "a102"},
-        "charlie.miller" : {pwd : "1ce.Upon.a.Time", patientId : "a103"},
-        "mark.taylor" : {pwd : "Going4ther$", patientId : "a104"},
-        "karen.young" : {pwd : "What'$This?", patientId : "a105"}
-        }
+    "sam.s.smith" : {pwd : "MyFood4Health!", patientId : "a101"},
+    "nancy.anderson" : {pwd : "OneHabit,2beU", patientId : "a102"},
+    "charlie.miller" : {pwd : "1ce.Upon.a.Time", patientId : "a103"},
+    "mark.taylor" : {pwd : "Going4ther$", patientId : "a104"},
+    "karen.young" : {pwd : "What1This?", patientId : "a105"}
+    }
 var fs = require('fs');
 
 function token(uname, pwd, fn) {
@@ -66,12 +66,17 @@ router.get('/raw/patient', function(req, res, next) {
 
 router.get('/raw/observation', function(req, res, next) {
     var uname = req.param('username');
+    var code = req.param('code');
     console.log(users[uname].pwd);
     token(uname, users[uname].pwd, function( validateError, validateResponse, validateBody ) {
         var user = validateBody
+        var endpoint = "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Observation/?subject:_id=" + users[uname].patientId + "&_count=50&_sort:desc=date";
+        if (code) {
+            endpoint = endpoint + "&name=" + code;
+        }
         console.log(validateBody);
         request({
-            url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Observation/?subject:_id=" + users[uname].patientId + "&_format=json&_pretty=true",
+            url: endpoint,
             method: "GET",
             json: true,
             headers: {
@@ -80,14 +85,11 @@ router.get('/raw/observation', function(req, res, next) {
             //body: {username: "sam.s.smith", password: "MyFood4Health!"}
         } , function( validateError, validateResponse, validateBody ) {
                 var observations = validateBody
-                fs.writeFile(uname + "_observation", JSON.stringify(observations), function(err) {
-                    if(err) {
-                        console.log(err);
-                    } else {
-                        console.log("The file was saved!");
-                    }
-                }); 
-                res.json(observations.entry);
+                
+                //for (i = 0; i < observations.entry.length; i++) { 
+                    //console.log(observations.entry[i]["title"]);
+                //}
+                res.json(observations);
         })
     })
 });
