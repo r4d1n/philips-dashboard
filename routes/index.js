@@ -85,10 +85,13 @@ router.get('/raw/observation', function(req, res, next) {
             //body: {username: "sam.s.smith", password: "MyFood4Health!"}
         } , function( validateError, validateResponse, validateBody ) {
                 var observations = validateBody
-                
-                //for (i = 0; i < observations.entry.length; i++) { 
-                    //console.log(observations.entry[i]["title"]);
-                //}
+                var entry = observations.entry
+                var re = {}
+                for (i = 0; i < entry.length; i++) { 
+                    //console.log(entry[i]["content"]["appliesDateTime"]);
+                    //console.log(entry[i]["content"]["valueQuantity"]["value"] + " " + entry[i]["content"]["valueQuantity"]["units"]);
+                    //re[entry[i]["content"]["appliesDateTime"]] = entry[i]["content"]["valueQuantity"]["value"] + " " + entry[i]["content"]["valueQuantity"]["units"];
+                }
                 res.json(observations);
         })
     })
