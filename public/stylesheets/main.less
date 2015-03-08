@@ -1,26 +1,61 @@
 @import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
 @import "dashboard.css";
+@import "timeline";
 
 body {
   font-family: 'Arimo', sans-serif;
   padding-top: 70px;
+  max-width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+ul.nav-sidebar {
+  li {
+    color: #666;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  em {
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+.row:not(.siderow) {
+  padding-left: 15%;
 }
 
 
-
-// first chart
 .chart {
-  path {
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
-  }
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+}
 
-  line {
-    stroke: black;
+div:not(#timeline) {
+  svg {
+    margin: 0 auto;
+    path.dimple-line {
+      stroke-width: 6px;
+    }
   }
+}
 
-  text {
-    font-size: 9pt;
+#timeline {
+  position: relative;
+  height: 100px;
+  svg {
+    g {
+      padding-top: 15px;
+    }
   }
+}
+
+span.timeline-label {
+  position: absolute;
+  top: 20%;
+  left: 10px;
 }

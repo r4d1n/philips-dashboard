@@ -33,7 +33,7 @@ function token(uname, pwd, fn) {
             fn(validateError, validateResponse, validateBody);
         })
 
-        
+
     })
 }
 /* GET home page. */
@@ -87,7 +87,7 @@ router.get('/raw/observation', function(req, res, next) {
                 var observations = validateBody
                 var entry = observations.entry
                 var re = {}
-                for (i = 0; i < entry.length; i++) { 
+                for (i = 0; i < entry.length; i++) {
                     //console.log(entry[i]["content"]["appliesDateTime"]);
                     //console.log(entry[i]["content"]["valueQuantity"]["value"] + " " + entry[i]["content"]["valueQuantity"]["units"]);
                     //re[entry[i]["content"]["appliesDateTime"]] = entry[i]["content"]["valueQuantity"]["value"] + " " + entry[i]["content"]["valueQuantity"]["units"];
@@ -105,21 +105,9 @@ router.get('/data/o2', function(req, res, next) {
         }
         console.log(data);
         var json = JSON.parse(data);
-        res.json(json);
+        res.json({ "o2" : json });
     });
-    
-});
 
-router.get('/data/o2', function(req, res, next) {
-    fs = require('fs')
-    fs.readFile('SPO2.json', 'utf8', function (err,data) {
-        if (err) {
-            return console.log(err);
-        }
-        var json = JSON.parse(data);
-        res.json(json);
-    });
-    
 });
 
 router.get('/data/temp', function(req, res, next) {
@@ -129,9 +117,9 @@ router.get('/data/temp', function(req, res, next) {
             return console.log(err);
         }
         var json = JSON.parse(data);
-        res.json(json);
+        res.json({"temp" : json});
     });
-    
+
 });
 
 router.get('/data/hr', function(req, res, next) {
@@ -141,9 +129,9 @@ router.get('/data/hr', function(req, res, next) {
             return console.log(err);
         }
         var json = JSON.parse(data);
-        res.json(json);
+        res.json({"hr": json});
     });
-    
+
 });
 
 module.exports = router;

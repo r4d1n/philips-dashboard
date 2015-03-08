@@ -1,106 +1,39 @@
 var dummyData = [
 {
-"resourceType":"Observation",
-"Temperature":{
-"value":102.1,
-"units":"F",
-},
-"appliesDateTime":"2015-03-06T13:18:38-05:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
+  "temperature":101.8,
+  "time":"2015-03-06 15:00",
+  "bp":"120/80",
+  "therapy":"imaging",
+  "o2":80,
+  "wbc": 11.0
 },
 {
-"resourceType":"Observation",
-"Temperature":{
-"value":101.6,
-"units":"F",
-},
-"appliesDateTime":"2015-03-06T13:18:38-07:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
+  "temperature":100.9,
+  "time":"2015-03-07 07:00",
+  "bp":"120/80",
+  "therapy":"fluids",
+  "o2":86,
+  "wbc": 10.5
 },
 {
-"resourceType":"Observation",
-"Temperature":{
-"value":101.8,
-"units":"F",
-},
-"appliesDateTime":"2015-03-06T13:18:38-11:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
+"temperature":99.1,
+"time":"2015-03-07 11:00",
+"bp":"120/80",
+ // "therapy":"drugs",
+"o2":89
 },
 {
-"resourceType":"Observation",
-"Temperature":{
-"value":101.8,
-"units":"F",
-},
-"appliesDateTime":"2015-03-06T13:18:38-15:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
+"temperature": 100.1,
+"time":"2015-03-07 15:00",
+"bp":"120/80",
+"therapy":"imaging",
+"o2":97
 },
 {
-"resourceType":"Observation",
-"Temperature":{
-"value":100.9,
-"units":"F",
-},
-"appliesDateTime":"2015-03-07T13:18:38-07:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
-},
-{
-"resourceType":"Observation",
-"Temperature":{
-"value":99.1,
-"units":"F",
-},
-"appliesDateTime":"2015-03-07T13:18:38-11:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
-},
-{
-"resourceType":"Observation",
-"Temperature":{
-"value":100.1,
-"units":"F",
-},
-"appliesDateTime":"2015-03-07T13:18:38-15:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
-},
-{
-"resourceType":"Observation",
-"Temperature":{
-"value":98.9,
-"units":"F",
-},
-"appliesDateTime":"2015-03-06T13:18:38-19:00",
-"status":"registered",
-"reliability":"ok",
-"subject":{
-"reference":"Patient/1"
-}
+"temperature":98.9,
+"time":"2015-03-06 19:00",
+"bp":"120/80",
+"therapy":"drugs",
+"o2":81
 }
 ]
