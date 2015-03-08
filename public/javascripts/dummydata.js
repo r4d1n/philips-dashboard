@@ -1,15 +1,15 @@
 var dummyData = [
 {
   "temperature":101.8,
-  "time":"2015-03-06 15:00",
+  "time":"2015-03-05 15:00",
   "bp":"120/80",
-  "therapy":"X-Ray",
+  "therapy":"XRay",
   "o2":80,
   "wbc": 11.0
 },
 {
   "temperature":100.9,
-  "time":"2015-03-07 07:00",
+  "time":"2015-03-06 07:00",
   "bp":"120/80",
   "therapy":"Levaquin",
   "o2":86,
@@ -31,9 +31,9 @@ var dummyData = [
 },
 {
 "temperature":98.9,
-"time":"2015-03-06 19:00",
+"time":"2015-03-08 19:00",
 "bp":"120/80",
-"therapy":"X-Ray",
+"therapy":"XRay",
 "o2":81
 }
 ]

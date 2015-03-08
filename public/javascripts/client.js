@@ -109,6 +109,7 @@ $(document).ready(function() {
     var svg = dimple.newSvg("#timeline", 700, 75);
     var chart = new dimple.chart(svg, data);
     var xAxis = chart.addCategoryAxis("x", ["Therapy", "Day","Time"]);
+    xAxis.addOrderRule("Day");
     var eventAxis = chart.addMeasureAxis("y", "therapyValue");
     var eventSeries = chart.addSeries(null, dimple.plot.line, [xAxis, eventAxis]);
     eventSeries.lineMarkers = true;
