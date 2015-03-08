@@ -1,8 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var accessToken;
+var users = {
+        "sam.s.smith" : {pwd : "MyFood4Health!", patientId : "a101"},
+        "nancy.anderson" : {pwd : "OneHabit,2beU", patientId : "a102"},
+        "charlie.miller" : {pwd : "1ce.Upon.a.Time", patientId : "a103"},
+        "mark.taylor" : {pwd : "Going4ther$", patientId : "a104"},
+        "karen.young" : {pwd : "What'$This?", patientId : "a105"}
+        }
+var fs = require('fs');
 
-function token(fn) {
+function token(uname, pwd, fn) {
     request({
         url: "https://gateway.api.pcftest.com:9004/v1/oauth2/token?grant_type=client_credentials",
         method: "POST",
@@ -11,7 +20,20 @@ function token(fn) {
             'Authorization': "Basic RFJDWUpFYnFQSUJiMmJOZURlSlcyR3V3QTNDUTFqaHk6cHJQTHIzYjJHRktVVFVacw==",
         },
     } , function( validateError, validateResponse, validateBody ) {
-        fn(validateError, validateResponse, validateBody);
+        accessToken = validateBody.access_token
+        request({
+            url: "https://gateway.api.pcftest.com:9004/v1/oauth2/authorize/login",
+            method: "POST",
+            json: true,
+            headers: {
+                'Authorization': "Bearer " + accessToken,
+            },
+            body: {username: uname, password: pwd}
+        } , function( validateError, validateResponse, validateBody ) {
+            fn(validateError, validateResponse, validateBody);
+        })
+
+        
     })
 }
 /* GET home page. */
@@ -20,42 +42,53 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/user', function(req, res, next) {
-    token(function( validateError, validateResponse, validateBody ) {
-        
-        var accessToken = validateBody.access_token
+router.get('/raw/patient', function(req, res, next) {
+    var uname = req.param('username');
+    console.log(users[uname].pwd);
+    token(uname, users[uname].pwd, function( validateError, validateResponse, validateBody ) {
+        var user = validateBody
+        console.log(validateBody);
         request({
-            url: "https://gateway.api.pcftest.com:9004/v1/oauth2/authorize/login",
-            method: "POST",
+            url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Patient/" + users[uname].patientId,
+            method: "GET",
             json: true,
             headers: {
                 'Authorization': "Bearer " + accessToken,
             },
-            body: {username: "sam.s.smith", password: "MyFood4Health!"}
+            //body: {username: "sam.s.smith", password: "MyFood4Health!"}
         } , function( validateError, validateResponse, validateBody ) {
-            var user = validateBody
-            console.log(validateBody);
-
-            request({
-                url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Patient/a101",
-                method: "GET",
-                json: true,
-                headers: {
-                    'Authorization': "Bearer " + accessToken,
-
-                },
-                //body: {username: "sam.s.smith", password: "MyFood4Health!"}
-            } , function( validateError, validateResponse, validateBody ) {
-                var user = validateBody
-                console.log(validateBody);
-                res.json(user);
-                
-            })
-            res.json(user);
-            
+            var patient = validateBody
+            console.log(patient);
+            res.json(patient);
         })
-        
-        
+    })
+});
+
+router.get('/raw/observation', function(req, res, next) {
+    var uname = req.param('username');
+    console.log(users[uname].pwd);
+    token(uname, users[uname].pwd, function( validateError, validateResponse, validateBody ) {
+        var user = validateBody
+        console.log(validateBody);
+        request({
+            url: "https://gateway.api.pcftest.com:9004/v1/fhir_rest/Observation/?subject:_id=" + users[uname].patientId + "&_format=json&_pretty=true",
+            method: "GET",
+            json: true,
+            headers: {
+                'Authorization': "Bearer " + accessToken,
+            },
+            //body: {username: "sam.s.smith", password: "MyFood4Health!"}
+        } , function( validateError, validateResponse, validateBody ) {
+                var observations = validateBody
+                fs.writeFile(uname + "_observation", JSON.stringify(observations), function(err) {
+                    if(err) {
+                        console.log(err);
+                    } else {
+                        console.log("The file was saved!");
+                    }
+                }); 
+                res.json(observations.entry);
+        })
     })
 });
 
