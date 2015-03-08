@@ -3,7 +3,7 @@ var dummyData = [
   "temperature":101.8,
   "time":"2015-03-06 15:00",
   "bp":"120/80",
-  "therapy":"imaging",
+  "therapy":"X-Ray",
   "o2":80,
   "wbc": 11.0
 },
@@ -11,7 +11,7 @@ var dummyData = [
   "temperature":100.9,
   "time":"2015-03-07 07:00",
   "bp":"120/80",
-  "therapy":"fluids",
+  "therapy":"Levaquin",
   "o2":86,
   "wbc": 10.5
 },
@@ -26,14 +26,14 @@ var dummyData = [
 "temperature": 100.1,
 "time":"2015-03-07 15:00",
 "bp":"120/80",
-"therapy":"imaging",
+"therapy":"Levaquin",
 "o2":97
 },
 {
 "temperature":98.9,
 "time":"2015-03-06 19:00",
 "bp":"120/80",
-"therapy":"drugs",
+"therapy":"X-Ray",
 "o2":81
 }
 ]
