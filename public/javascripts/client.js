@@ -3,10 +3,6 @@
 $(document).ready(function() {
   console.log(dummyData);
 
-  $('#')
-
-
-
   function getTemps (arr) {
     var temps = [];
     for(var i = 0; i < arr.length; i++) {
