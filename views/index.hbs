@@ -1,3 +1,13 @@
+<div class="modal fade xray-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <img src='/assets/xray.png' />
+      <img src='/assets/xray.png' />
+    </div>
+  </div>
+</div>
+
+<!-- begin sidebar -->
 <div class="container-fluid">
   <div class="row siderow">
     <div class="col-sm-3 col-md-2 sidebar">
@@ -16,10 +26,7 @@
         </ul>
       </ul>
       <ul class="nav nav-sidebar">
-        <li><em>Prior Imaging:</em></li>
-        <li>Chest X-Ray</li>
-      </ul>
-      <ul class="nav nav-sidebar">
+        <li><a href="#" data-toggle="modal" data-target=".xray-modal">Recent Imaging</a></li>
         <li><a>Labwork</a></li>
         <li><a>Vitals</a></li>
       </ul>

@@ -3,6 +3,8 @@
 $(document).ready(function() {
   console.log(dummyData);
 
+  $('#')
+
 
 
   function getTemps (arr) {
@@ -66,6 +68,8 @@ $(document).ready(function() {
     var o2Series = chart.addSeries("O2", dimple.plot.line, [xAxis, o2Axis]);
     temperatureSeries.lineMarkers = true;
     o2Series.lineMarkers = true;
+    yTemperatureAxis.title = "Temperature F";
+    o2Axis.title = "O2";
 
     xAxis.title = "Time";
     chart.addLegend(60,5,120,10,"right",temperatureSeries);
@@ -91,7 +95,7 @@ $(document).ready(function() {
     wbcSeries.tickFormat = ',.01f';
     yWbcAxis.overrideMin = 9;
     yWbcAxis.overrideMax = 14;
-
+    yWbcAxis.title = "WBC Count";
     xAxis.title = "Time";
     chart.addLegend(60,5,120,10,"right",wbcSeries);
 
@@ -116,7 +120,8 @@ $(document).ready(function() {
     eventAxis.hidden = true;
     xAxis.hidden = true;
     xAxis.title = "Time";
-    chart.setBounds(60, 25, 700, 50)
+    chart.setBounds(60, 25, 700, 50);
+    // chart.assignColor('therapyValue', '#333', '#999', 1)
     chart.draw();
   })();
 

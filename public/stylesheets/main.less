@@ -47,8 +47,13 @@ div:not(#timeline) {
 #timeline {
   position: relative;
   height: 100px;
+  path, circle {
+    stroke: #333;
+  }
   svg {
     g {
+      stroke: #333;
+
       padding-top: 15px;
     }
   }
@@ -58,4 +63,12 @@ span.timeline-label {
   position: absolute;
   top: 20%;
   left: 10px;
+}
+
+.modal-content {
+  img {
+    width: 50%;
+    float: left;
+    padding: 50px 25px;
+  }
 }
