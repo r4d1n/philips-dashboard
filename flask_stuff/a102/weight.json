@@ -1,0 +1,1232 @@
+[
+  {
+    "metric_type": "weight",
+    "time": "2014-01-01 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-02 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-03 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-03 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-03 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-03 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-03 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-04 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-05 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-06 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-07 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-08 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-09 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-10 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-11 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-12 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-13 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-13 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-14 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-15 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-16 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-17 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-18 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-19 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-19 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-20 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-21 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-21 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-22 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-22 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-23 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-24 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-24 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-25 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-26 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-27 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-28 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-29 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-30 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-01-31 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-01 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-02 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-03 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-04 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-05 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-06 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-07 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-08 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-09 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-10 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-10 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-11 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-12 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-13 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-14 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-18 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-19 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-19 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-20 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-21 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-21 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-21 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-22 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-22 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-23 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-24 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-24 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-25 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-25 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-26 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-27 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-28 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-02-28 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-01 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-01 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-01 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-02 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-02 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-02 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-03 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-03 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-04 ",
+    "units": "kg",
+    "value": 63.05
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-04 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-05 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-05 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-05 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-06 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-07 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-07 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-08 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-09 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-09 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-10 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-10 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-11 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-12 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-13 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-14 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-15 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-15 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-16 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-17 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-17 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-18 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-19 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-20 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-20 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-21 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-21 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-22 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-22 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-23 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-24 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-24 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-25 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-25 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-26 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-27 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-27 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-28 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-28 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-29 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-30 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-30 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-03-31 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-01 ",
+    "units": "kg",
+    "value": 63.05
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-01 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-02 ",
+    "units": "kg",
+    "value": 63.05
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-02 ",
+    "units": "kg",
+    "value": 63.28
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-03 ",
+    "units": "kg",
+    "value": 63.5
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-04 ",
+    "units": "kg",
+    "value": 63.28
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-05 ",
+    "units": "kg",
+    "value": 63.05
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-06 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-07 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-08 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-09 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-10 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-10 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-11 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-12 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-13 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-14 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-15 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-16 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-17 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-18 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-22 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-23 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-24 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-25 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-25 ",
+    "units": "kg",
+    "value": 62.82
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-26 ",
+    "units": "kg",
+    "value": 62.6
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-27 ",
+    "units": "kg",
+    "value": 62.37
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-28 ",
+    "units": "kg",
+    "value": 62.14
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-28 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-29 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-04-30 ",
+    "units": "kg",
+    "value": 61.92
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-01 ",
+    "units": "kg",
+    "value": 61.69
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-02 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-03 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-04 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-05 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-06 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-06 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-07 ",
+    "units": "kg",
+    "value": 61.46
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-08 ",
+    "units": "kg",
+    "value": 61.23
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-09 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-09 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-10 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-11 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-11 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-12 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-12 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-13 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-13 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-14 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-15 ",
+    "units": "kg",
+    "value": 61.01
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-15 ",
+    "units": "kg",
+    "value": 60.78
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-15 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-16 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-16 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-17 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-18 ",
+    "units": "kg",
+    "value": 60.55
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-19 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-20 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-20 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-20 ",
+    "units": "kg",
+    "value": 59.65
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-21 ",
+    "units": "kg",
+    "value": 59.42
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-21 ",
+    "units": "kg",
+    "value": 59.65
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-22 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-22 ",
+    "units": "kg",
+    "value": 59.65
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-23 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-24 ",
+    "units": "kg",
+    "value": 59.65
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-25 ",
+    "units": "kg",
+    "value": 59.42
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-25 ",
+    "units": "kg",
+    "value": 59.65
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-25 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-25 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-26 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-26 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-26 ",
+    "units": "kg",
+    "value": 60.33
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-27 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-28 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-29 ",
+    "units": "kg",
+    "value": 60.1
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-29 ",
+    "units": "kg",
+    "value": 59.87
+  },
+  {
+    "metric_type": "weight",
+    "time": "2014-05-30 ",
+    "units": "kg",
+    "value": 59.65
+  }
+]
