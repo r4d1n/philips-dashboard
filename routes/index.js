@@ -97,4 +97,53 @@ router.get('/raw/observation', function(req, res, next) {
     })
 });
 
+router.get('/data/o2', function(req, res, next) {
+    fs = require('fs')
+    fs.readFile('SPO2.json', 'utf8', function (err,data) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log(data);
+        var json = JSON.parse(data);
+        res.json(json);
+    });
+    
+});
+
+router.get('/data/o2', function(req, res, next) {
+    fs = require('fs')
+    fs.readFile('SPO2.json', 'utf8', function (err,data) {
+        if (err) {
+            return console.log(err);
+        }
+        var json = JSON.parse(data);
+        res.json(json);
+    });
+    
+});
+
+router.get('/data/temp', function(req, res, next) {
+    fs = require('fs')
+    fs.readFile('temp.json', 'utf8', function (err,data) {
+        if (err) {
+            return console.log(err);
+        }
+        var json = JSON.parse(data);
+        res.json(json);
+    });
+    
+});
+
+router.get('/data/hr', function(req, res, next) {
+    fs = require('fs')
+    fs.readFile('hr.json', 'utf8', function (err,data) {
+        if (err) {
+            return console.log(err);
+        }
+        var json = JSON.parse(data);
+        res.json(json);
+    });
+    
+});
+
 module.exports = router;
