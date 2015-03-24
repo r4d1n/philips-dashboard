@@ -71,12 +71,10 @@ body {
 .chart-wrapper {
   width: 80%;
   height: 100%;
-  float: right; }
+  float: right;
+  padding: 30px; }
   .chart-wrapper .column {
-    padding: 30px 5px 10px 5px;
     height: 80%;
     display: inline-block; }
-    .chart-wrapper .column #chart.rickshaw-graph {
-      height: 25%; }
 
 /*# sourceMappingURL=main.css.map */

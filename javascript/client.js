@@ -12,8 +12,8 @@ for (var i = 0; i < 75; i++) {
 var graph1 = new Rickshaw.Graph( {
 	element: document.getElementById("chart1"),
 	renderer: 'multi',
-	width: 800,
-	height: 400,
+	width: 750,
+	height: 250,
 	dotSize: 5,
 	series: [
 		{
@@ -49,8 +49,8 @@ var graph1 = new Rickshaw.Graph( {
 var graph2 = new Rickshaw.Graph( {
 	element: document.getElementById("chart2"),
 	renderer: 'multi',
-	width: 800,
-	height: 400,
+	width: 750,
+	height: 250,
 	dotSize: 5,
 	series: [
 		{
@@ -85,7 +85,7 @@ graph1.render();
 graph2.render();
 
 // graph 1 stuffs
-var detail = new Rickshaw.Graph.HoverDetail({
+var detail1 = new Rickshaw.Graph.HoverDetail({
 	graph: graph1
 });
 var legend = new Rickshaw.Graph.Legend({
@@ -98,13 +98,13 @@ var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
     disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
 });
 
-//graph 2 stuff
 var highlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
     graph: graph2,
     legend: legend
 });
 
-var detail = new Rickshaw.Graph.HoverDetail({
+//graph 2 stuff
+var detail2 = new Rickshaw.Graph.HoverDetail({
 	graph: graph2
 });
 var legend = new Rickshaw.Graph.Legend({

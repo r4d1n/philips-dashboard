@@ -32,13 +32,9 @@ body {
   width: 80%;
   height: 100%;
   float: right;
+  padding: 30px;
   .column {
-    padding: 30px 5px 10px 5px;
     height: 80%;
     display: inline-block;
-    #chart.rickshaw-graph {
-      height: 25%;
-
-    }
   }
 }
