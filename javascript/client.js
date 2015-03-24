@@ -1,12 +1,16 @@
 $(document).ready(function() {
 
-var seriesData = [ [], [], [], [], [], [], [], [] ];
+var seriesData1 = [ [], [], [], [], []];
+var seriesData2 = [ [], [], []];
 var random = new Rickshaw.Fixtures.RandomData(50);
 for (var i = 0; i < 75; i++) {
-	random.addData(seriesData);
+	random.addData(seriesData1);
 }
-var graph = new Rickshaw.Graph( {
-	element: document.getElementById("chart"),
+for (var i = 0; i < 75; i++) {
+	random.addData(seriesData2);
+}
+var graph1 = new Rickshaw.Graph( {
+	element: document.getElementById("chart1"),
 	renderer: 'multi',
 	width: 800,
 	height: 400,
@@ -14,68 +18,111 @@ var graph = new Rickshaw.Graph( {
 	series: [
 		{
 			name: 'Temperature',
-			data: seriesData.shift(),
+			data: seriesData1.shift(),
 			color: 'rgba(255, 0, 0, 0.4)',
-			renderer: 'stack'
+			renderer: 'line'
 		}, {
 			name: 'Respiratory',
-			data: seriesData.shift(),
+			data: seriesData1.shift(),
 			color: 'rgba(255, 127, 0, 0.4)',
-			renderer: 'stack'
+			renderer: 'line'
 		}, {
 			name: 'Heartbeat',
-			data: seriesData.shift(),
+			data: seriesData1.shift(),
 			color: 'rgba(127, 0, 0, 0.3)',
-			renderer: 'scatterplot'
+			renderer: 'line'
 		}, {
 			name: 'Blood Pressure',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
+			data: seriesData1.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
 			color: 'rgba(0, 0, 127, 0.4)',
-			renderer: 'bar'
+			renderer: 'line'
 		}, {
 			name: 'O2',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			data: seriesData1.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
-			color: 'rgba(0, 0, 127, 0.25)'
-		}, {
+			color: 'rgba(204, 0, 51, 1.0)'
+		}
+	]
+} );
+
+
+var graph2 = new Rickshaw.Graph( {
+	element: document.getElementById("chart2"),
+	renderer: 'multi',
+	width: 800,
+	height: 400,
+	dotSize: 5,
+	series: [
+		{
 			name: 'CBC',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
 			color: 'rgba(0, 0, 127, 0.25)'
 		}, {
 			name: 'BMP',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
 			color: 'rgba(0, 0, 127, 0.25)'
 		}, {
 			name: 'Blood Culture',
-			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
 			color: 'rgba(0, 0, 127, 0.25)'
 		}
-
 	]
 } );
+
+
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
-	graph: graph,
+	graphs: [graph1, graph2],
 	element: document.querySelector('#slider')
 });
-graph.render();
+// var slider = new Rickshaw.Graph.RangeSlider.Preview({
+// 	graph: graph2,
+// 	element: document.querySelector('#slider')
+// });
+graph1.render();
+graph2.render();
+
+// graph 1 stuffs
 var detail = new Rickshaw.Graph.HoverDetail({
-	graph: graph
+	graph: graph1
 });
 var legend = new Rickshaw.Graph.Legend({
-	graph: graph,
+	graph: graph1,
 	element: document.querySelector('#legend')
 });
 var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
-    graph: graph,
+    graph: graph1,
+    legend: legend,
+    disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
+});
+
+//graph 2 stuff
+var highlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
+    graph: graph2,
+    legend: legend
+});
+
+var detail = new Rickshaw.Graph.HoverDetail({
+	graph: graph2
+});
+var legend = new Rickshaw.Graph.Legend({
+	graph: graph2,
+	element: document.querySelector('#legend')
+});
+var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+    graph: graph2,
     legend: legend,
     disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
 });
 var highlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
-    graph: graph,
+    graph: graph2,
     legend: legend
 });
+
+
+
+
 
 });
