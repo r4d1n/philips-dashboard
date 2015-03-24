@@ -119,13 +119,14 @@ bmpGraph.render();
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
   graphs: [vitalsGraph, cbcGraph, bmpGraph], // to control all charts together
   element: document.querySelector('#slider'),
-  preview: [],
+  
 });
 
 
 // vitalsGraph stuffs
 var detail1 = new Rickshaw.Graph.HoverDetail({
-  graph: vitalsGraph
+  graph: vitalsGraph,
+
 });
 var vitalsLegend = new Rickshaw.Graph.Legend({
   graph: vitalsGraph,
