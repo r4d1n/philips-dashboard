@@ -1,0 +1,17 @@
+@import "reset";
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 10%;
+  height: 100%;
+  color: #fdfdfd;
+  background-color: #0099CC;
+  ul {
+    margin: 0 auto;
+    padding: 30px 10px;
+    li{
+      padding: 0px 5px 10px 5px;
+    }
+  }
+}
