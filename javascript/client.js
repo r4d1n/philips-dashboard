@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-var seriesData = [ [], [], [], [], [] ];
+var seriesData = [ [], [], [], [], [], [], [], [] ];
 var random = new Rickshaw.Fixtures.RandomData(50);
 for (var i = 0; i < 75; i++) {
 	random.addData(seriesData);
@@ -13,31 +13,47 @@ var graph = new Rickshaw.Graph( {
 	dotSize: 5,
 	series: [
 		{
-			name: 'temperature',
+			name: 'Temperature',
 			data: seriesData.shift(),
 			color: 'rgba(255, 0, 0, 0.4)',
 			renderer: 'stack'
 		}, {
-			name: 'heat index',
+			name: 'Respiratory',
 			data: seriesData.shift(),
 			color: 'rgba(255, 127, 0, 0.4)',
 			renderer: 'stack'
 		}, {
-			name: 'dewpoint',
+			name: 'Heartbeat',
 			data: seriesData.shift(),
 			color: 'rgba(127, 0, 0, 0.3)',
 			renderer: 'scatterplot'
 		}, {
-			name: 'pop',
+			name: 'Blood Pressure',
 			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
 			color: 'rgba(0, 0, 127, 0.4)',
 			renderer: 'bar'
 		}, {
-			name: 'humidity',
+			name: 'O2',
+			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			renderer: 'line',
+			color: 'rgba(0, 0, 127, 0.25)'
+		}, {
+			name: 'CBC',
+			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			renderer: 'line',
+			color: 'rgba(0, 0, 127, 0.25)'
+		}, {
+			name: 'BMP',
+			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+			renderer: 'line',
+			color: 'rgba(0, 0, 127, 0.25)'
+		}, {
+			name: 'Blood Culture',
 			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
 			color: 'rgba(0, 0, 127, 0.25)'
 		}
+
 	]
 } );
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
