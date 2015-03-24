@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   var seriesData1 = [ [], [], [], [], []];
   var seriesData2 = [ [], [], []];
+  var seriesData3 = [ [], [], [], []];
   var random = new Rickshaw.Fixtures.RandomData(50);
   for (var i = 0; i < 75; i++) {
     random.addData(seriesData1);
@@ -9,11 +10,14 @@ $(document).ready(function() {
   for (var i = 0; i < 75; i++) {
     random.addData(seriesData2);
   }
+  for (var i = 0; i < 75; i++) {
+    random.addData(seriesData3);
+  }
   var vitalsGraph = new Rickshaw.Graph( {
     element: document.getElementById("chart1"),
     renderer: 'multi',
     width: 750,
-    height: 250,
+    height: 150,
     dotSize: 5,
     series: [
   {
@@ -45,44 +49,67 @@ $(document).ready(function() {
   ]
 } );
 
-
-var labsGraph = new Rickshaw.Graph( {
+var cbcGraph = new Rickshaw.Graph( {
   element: document.getElementById("chart2"),
   renderer: 'multi',
   width: 750,
-  height: 250,
+  height: 150,
   dotSize: 5,
   series: [
 {
-  name: 'CBC',
+  name: 'RBC',
   data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-  renderer: 'line',
-  color: 'rgba(0, 0, 127, 0.25)'
+  renderer: 'scatterplot',
+  color: 'rgba(162, 0, 255, 0.5)'
 }, {
-  name: 'BMP',
+  name: 'WBC',
   data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-  renderer: 'line',
-  color: 'rgba(0, 0, 127, 0.25)'
+  renderer: 'scatterplot',
+  color: 'rgba(27, 161, 266, 0.5)'
 }, {
-  name: 'Blood Culture',
+  name: 'PLT',
   data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+  renderer: 'scatterplot',
+  color: 'rgba(240, 150, 9, 0.5)'
+}
+]
+});
+
+var bmpGraph = new Rickshaw.Graph( {
+  element: document.getElementById("chart2"),
+  renderer: 'multi',
+  width: 750,
+  height: 150,
+  dotSize: 5,
+  series: [
+{
+  name: 'Na',
+  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
   renderer: 'line',
-  color: 'rgba(0, 0, 127, 0.25)'
+  color: 'rgba(18, 133, 117, 0.5)'
+}, {
+  name: 'K',
+  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+  renderer: 'line',
+  color: 'rgba(249, 71, 47, 0.5)'
+}, {
+  name: 'Cl',
+  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+  renderer: 'line',
+  color: 'rgba(97, 216, 105, 0.5)'
 }
 ]
 } );
 
-
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
-  graphs: [vitalsGraph, labsGraph],
+  graphs: [vitalsGraph, cbcGraph, bmpGraph], // to control all charts together
   element: document.querySelector('#slider')
 });
-// var slider = new Rickshaw.Graph.RangeSlider.Preview({
-// 	graph: labsGraph,
-// 	element: document.querySelector('#slider')
-// });
+
+// render all the charts
 vitalsGraph.render();
-labsGraph.render();
+cbcGraph.render();
+bmpGraph.render();
 
 // vitalsGraph stuffs
 var detail1 = new Rickshaw.Graph.HoverDetail({
@@ -92,32 +119,50 @@ var vitalsLegend = new Rickshaw.Graph.Legend({
   graph: vitalsGraph,
   element: document.querySelector('#vitals-legend')
 });
-var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
   graph: vitalsGraph,
   legend: vitalsLegend,
   disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
 });
-
-var highlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
+var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
   graph: vitalsGraph,
   legend: vitalsLegend
 });
 
-// labsGraph stuff
+// cbcGraph stuff
 var detail2 = new Rickshaw.Graph.HoverDetail({
-  graph: labsGraph
+  graph: cbcGraph
 });
-var labsLegend = new Rickshaw.Graph.Legend({
-  graph: labsGraph,
-  element: document.querySelector('#labs-legend')
+var cbcLegend = new Rickshaw.Graph.Legend({
+  graph: cbcGraph,
+  element: document.querySelector('#cbc-legend')
 });
-var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
-  graph: labsGraph,
-  legend: labsLegend,
+var cbcHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+  graph: cbcGraph,
+  legend: cbcLegend,
   disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
 });
-var highlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
-  graph: labsGraph,
-  legend: labsLegend
+var cbcHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
+  graph: cbcGraph,
+  legend: cbcLegend
 });
+
+// bmpGraph stuff
+var detail3 = new Rickshaw.Graph.HoverDetail({
+  graph: bmpGraph
 });
+var bmpLegend = new Rickshaw.Graph.Legend({
+  graph: bmpGraph,
+  element: document.querySelector('#bmp-legend')
+});
+var bmpHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+  graph: bmpGraph,
+  legend: bmpLegend,
+  disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
+});
+var bmbHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
+  graph: bmpGraph,
+  legend: bmpLegend
+});
+
+}); // document ready
