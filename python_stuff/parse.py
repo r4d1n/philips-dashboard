@@ -31,7 +31,7 @@ def main():
 
 			for col_number, label in relevant_columns:
 				if row[col_number].value:
-					string_to_add = '{ x:%s, y: %s} ,'%(unix_time_total, row[col_number].value)
+					string_to_add = '{ x:%s, y: %s} ,\n'%(unix_time_total, row[col_number].value)
 					data[label] += string_to_add
 					#data[label].append({"x":unix_time_total, "y":row[col_number].value})
 		row_number += 1

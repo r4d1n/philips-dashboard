@@ -76,5 +76,8 @@ body {
   .chart-wrapper .column {
     height: 100%;
     display: inline-block; }
+    .chart-wrapper .column .rickshaw_graph {
+      height: 100%;
+      padding-bottom: 25px; }
 
 /*# sourceMappingURL=main.css.map */
