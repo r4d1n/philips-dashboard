@@ -1,9 +1,14 @@
 @import "reset";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 .sidebar {
   position: fixed;
   left: 0px;
-  width: 10%;
+  width: 15%;
   height: 100%;
   color: #fdfdfd;
   background-color: #0099CC;
@@ -12,6 +17,26 @@
     padding: 30px 10px;
     li{
       padding: 0px 5px 10px 5px;
+    }
+  }
+  .column.rickshaw_legend {
+    width: 80%;
+    color: inherit;
+    background-color: inherit;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}
+
+.chart-wrapper {
+  width: 80%;
+  height: 100%;
+  float: right;
+  .column {
+    height: 80%;
+    display: inline-block;
+    #chart.rickshaw-graph {
+      height: 25%;
     }
   }
 }

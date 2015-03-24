@@ -8,8 +8,8 @@ for (var i = 0; i < 75; i++) {
 var graph = new Rickshaw.Graph( {
 	element: document.getElementById("chart"),
 	renderer: 'multi',
-	width: 900,
-	height: 500,
+	width: 800,
+	height: 400,
 	dotSize: 5,
 	series: [
 		{
