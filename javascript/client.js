@@ -53,7 +53,7 @@ var cbcGraph = new Rickshaw.Graph( {
   element: document.getElementById("chart2"),
   renderer: 'multi',
   width: 750,
-  height: 150,
+  height: 200,
   dotSize: 5,
   series: [
 {
@@ -79,7 +79,7 @@ var bmpGraph = new Rickshaw.Graph( {
   element: document.getElementById("chart2"),
   renderer: 'multi',
   width: 750,
-  height: 150,
+  height: 200,
   dotSize: 5,
   series: [
 {
@@ -101,15 +101,15 @@ var bmpGraph = new Rickshaw.Graph( {
 ]
 } );
 
-var slider = new Rickshaw.Graph.RangeSlider.Preview({
-  graphs: [vitalsGraph, cbcGraph, bmpGraph], // to control all charts together
-  element: document.querySelector('#slider')
-});
-
 // render all the charts
 vitalsGraph.render();
 cbcGraph.render();
 bmpGraph.render();
+
+var slider = new Rickshaw.Graph.RangeSlider.Preview({
+  graphs: [vitalsGraph, cbcGraph, bmpGraph], // to control all charts together
+  element: document.querySelector('#slider')
+});
 
 // vitalsGraph stuffs
 var detail1 = new Rickshaw.Graph.HoverDetail({
