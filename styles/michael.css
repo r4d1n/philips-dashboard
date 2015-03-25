@@ -46,11 +46,11 @@
 
 #xray {
     display: none;
-    background-image: url('pic/xray.png');
-    background-size: 50%;
+    background-image: url('pic/xray_zoom2.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 600px;
     position: absolute;
 
 }
