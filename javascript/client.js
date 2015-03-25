@@ -13,53 +13,50 @@ $(document).ready(function() {
   for (var i = 0; i < 10; i++) {
     random.addData(seriesData3);
   }
-  var vitalsGraph = new Rickshaw.Graph( {
+  var vitalsGraphTemp = new Rickshaw.Graph( {
     element: document.getElementById("chart1"),
     renderer: 'multi',
     width: 750,
     height: 150,
     dotSize: 5,
-    min: -10,
-    max: 110,
+    min: 'auto',
+    max: 103,
     stack: false,
     series: [
-  {
-    name: 'Temperature',
-    data: tempData,
-    color: 'rgba(255, 119, 170, 0.4)',
-    renderer: 'scatterplot' },
-  // }, {
-  //   name: 'Respiratory',
-  //   data: seriesData1.shift(),
-  //   color: 'rgba(255, 127, 0, 0.4)',
-  //   renderer: 'line'
-  // }, {
-  //   name: 'Heartbeat',
-  //   data: seriesData1.shift(),
-  //   color: 'rgba(127, 0, 0, 0.3)',
-  //   renderer: 'line'
-  // }, {
-  //   name: 'Blood Pressure',
-  //   data: seriesData1.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
-  //   color: 'rgba(0, 0, 127, 0.4)',
-  //   renderer: 'line'
-  {
-    name: 'O2',
-    data: o2Data,
-    renderer: 'scatterplot',
-    color: 'rgba(170, 255, 119, 1.0)'
-  },
-  ]
-} );
+        {
+          name: 'Temperature',
+          data: tempData,
+          color: 'rgba(255, 119, 170, 0.4)',
+          renderer: 'scatterplot' },
+    ]
+    } );
 
+var vitalsGraphO2 = new Rickshaw.Graph( {
+  element: document.getElementById("chart1-part2"),
+  renderer: 'multi',
+  width: 750,
+  height: 150,
+  dotSize: 5,
+  min: 0.5,
+  max: 1.25,
+  stack: false,
+  series: [
+      {
+        name: 'O2',
+        data: o2Data,
+        renderer: 'scatterplot',
+        color: 'rgba(170, 255, 119, 1.0)'
+      },
+  ]
+  } );
 var cbcGraph = new Rickshaw.Graph( {
   element: document.getElementById("chart2"),
   renderer: 'multi',
   width: 750,
   height: 150,
   dotSize: 5,
-  min: 8,
-  max: 16,
+  min: 10,
+  max: 15,
   stack: false,
   series: [
 // {
@@ -112,33 +109,53 @@ var bmpGraph = new Rickshaw.Graph( {
 } );
 
 // render all the charts
-vitalsGraph.render();
+vitalsGraphTemp.render();
+vitalsGraphO2.render();
 cbcGraph.render();
 bmpGraph.render();
 
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
-  graphs: [vitalsGraph, cbcGraph, bmpGraph], // to control all charts together
+  graphs: [vitalsGraphTemp, vitalsGraphO2, cbcGraph, bmpGraph], // to control all charts together
   element: document.querySelector('#slider'),
   
 });
 
 
-// vitalsGraph stuffs
+// vitalsGraphTemp stuffs
 var detail1 = new Rickshaw.Graph.HoverDetail({
-  graph: vitalsGraph,
+  graph: vitalsGraphTemp,
 
 });
 var vitalsLegend = new Rickshaw.Graph.Legend({
-  graph: vitalsGraph,
-  element: document.querySelector('#vitals-legend')
+  graph: vitalsGraphTemp,
+  element: document.querySelector('#vitals-legend1')
 });
 var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
-  graph: vitalsGraph,
+  graph: vitalsGraphTemp,
   legend: vitalsLegend,
   disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
 });
 var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
-  graph: vitalsGraph,
+  graph: vitalsGraphTemp,
+  legend: vitalsLegend
+});
+
+// vitalsGraphO2 stuffs
+var detail1 = new Rickshaw.Graph.HoverDetail({
+  graph: vitalsGraphO2,
+
+});
+var vitalsLegend = new Rickshaw.Graph.Legend({
+  graph: vitalsGraphO2,
+  element: document.querySelector('#vitals-legend2')
+});
+var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+  graph: vitalsGraphO2,
+  legend: vitalsLegend,
+  disabledColor: function() { return 'rgba(0, 0, 0, 0.2)' }
+});
+var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
+  graph: vitalsGraphO2,
   legend: vitalsLegend
 });
 
@@ -235,5 +252,5 @@ var wbcData = [
 { x:1426947000, y: 13.5} ,
 { x:1427031000, y: 14.5} ,
 { x:1427112000, y: 12.1} ,
-{ x:1427202900, y: 10.1} ,
+{ x:1427202900, y: 11.1} ,
  ]

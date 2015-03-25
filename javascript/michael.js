@@ -61,9 +61,10 @@ grid.$grid.on("click", "div", function(e){
     //grid.selectSquare(x, y);
     console.log(x);
     console.log(y);
-    $('#xray').offset({ top: 50, left: 250 });
-    console.log("new position");
-    console.log( 200-20*x);
-    console.log( 300-20*y);
+    if (x < 12) {
+        $('#xray').offset({ top: 25, left: 250 });
+    } else {
+        $('#xray').offset({ top: 25, left: 150 });
+    }
     $('#xray').toggle();
 });
