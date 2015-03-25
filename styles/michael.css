@@ -15,8 +15,8 @@
     display: inline-block;
     border-top: solid 1px rgba(255,255,255,0.3);
     border-left: solid 1px rgba(255,255,255,0.3);
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     color: black;
     font-size: larger;
 }
@@ -26,8 +26,13 @@
     cursor: pointer;
 }
 
-.alt0 {   backaground-image: url("http://imgsdown.1mobile.com/group2/M00/3F/67/S36rZFULAX-AC2msAAF3P-JYyrM453.png");
+.alt0 {   
+
+    background-color: black;    }
+
 }
+
+
 .alt1 {    background-color: red;    }
 .alt2 {    background-color: green;    }
 .alt3 {    background-color: #430;    }
@@ -38,3 +43,16 @@
 .alt8 {    background-color: #873;    }
 .alt9 {    background-color: #874;    }
 .alt10 {   background-color: #875;    }
+
+#xray {
+    display: none;
+    background-image: url('pic/xray.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+
+}
+
+
