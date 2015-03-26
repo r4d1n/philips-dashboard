@@ -77,6 +77,45 @@ body {
     height: 100%;
     display: inline-block; }
     .chart-wrapper .column .rickshaw_graph {
-      height: 90%; }
+      height: 90%;
+      width: 100%; }
+
+.legend-title {
+  height: 50px;
+  text-align: center;
+  margin-left: 20px;
+  font-size: 50px; }
+
+.legend-title1 {
+  height: 50px;
+  text-align: center;
+  margin: -20px 0 0 20px;
+  font-size: 50px; }
+
+.legend-title2 {
+  height: 50px;
+  text-align: center;
+  margin-left: 20px;
+  font-size: 50px; }
+
+#vitals-legend1 .ui-sortable {
+  font-size: 20px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  width: 120%; }
+
+#cbc-legend .ui-sortable {
+  font-size: 20px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  width: 120%; }
+
+#bmp-legend .ui-sortable {
+  font-size: 20px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  width: 120%; }
+#bmp-legend .ui-sortable-handle {
+  margin: 5px 5px 5px 5px; }
 
 /*# sourceMappingURL=main.css.map */

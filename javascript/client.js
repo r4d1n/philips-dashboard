@@ -16,10 +16,10 @@ $(document).ready(function() {
   var vitalsGraphTemp = new Rickshaw.Graph( {
     element: document.getElementById("chart1"),
     renderer: 'multi',
-    width: 750,
+    width: 1000,
     height: 150,
     dotSize: 5,
-    min: 'auto',
+    min: 97,
     max: 103,
     stack: false,
     series: [
@@ -34,7 +34,7 @@ $(document).ready(function() {
 var vitalsGraphO2 = new Rickshaw.Graph( {
   element: document.getElementById("chart1-part2"),
   renderer: 'multi',
-  width: 750,
+  width: 1000,
   height: 150,
   dotSize: 5,
   min: 0.5,
@@ -52,31 +52,30 @@ var vitalsGraphO2 = new Rickshaw.Graph( {
 var cbcGraph = new Rickshaw.Graph( {
   element: document.getElementById("chart2"),
   renderer: 'multi',
-  width: 750,
+  width: 1000,
   height: 150,
   dotSize: 5,
   min: 10,
-  max: 15,
+  max: 30,
   stack: false,
   series: [
-// {
-//   name: 'RBC',
-//   data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-//   renderer: 'scatterplot',
-//   color: 'rgba(162, 0, 255, 0.5)'
-// }, {
+
   {
     name: 'WBC',
     data: wbcData,
-    renderer: 'scatterplot',
+    renderer: 'bar',
     color: 'rgba(27, 161, 266, 0.5)'
+  }, {
+    name: 'RBC',
+    data: rbcData,
+    renderer: 'bar',
+    color: 'rgba(255, 0, 0, 0.5)'
+  }, {
+    name: 'PLT',
+    data: pltData,
+    renderer: 'bar',
+    color: 'rgba(240, 150, 9, 0.5)'
   }
-// }, {
-//   name: 'PLT',
-//   data: seriesData2.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-//   renderer: 'scatterplot',
-//   color: 'rgba(240, 150, 9, 0.5)'
-// }
 ]
 });
 
@@ -86,39 +85,32 @@ var bmpGraph = new Rickshaw.Graph( {
   width: 750,
   height: 250,
   dotSize: 5,
-  min: 'auto',
+  min: 0.5,
+  max: 1.25,
   stack: false,
   series: [
-{
-  name: 'Na',
-  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-  renderer: 'line',
-  color: 'rgba(18, 133, 117, 0.5)'
-}, {
-  name: 'K',
-  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-  renderer: 'line',
-  color: 'rgba(249, 71, 47, 0.5)'
-}, {
-  name: 'Cl',
-  data: seriesData3.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
-  renderer: 'line',
-  color: 'rgba(97, 216, 105, 0.5)'
-}
-]
-} );
+    {
+      name: 'Na',
+      data: o2Data,
+      renderer: 'scatterplot',
+      color: 'rgba(18, 133, 117, 0.5)'
+    }]
+ } );
+
+
 
 // render all the charts
 vitalsGraphTemp.render();
 vitalsGraphO2.render();
 cbcGraph.render();
 bmpGraph.render();
-
 var slider = new Rickshaw.Graph.RangeSlider.Preview({
   graphs: [vitalsGraphTemp, vitalsGraphO2, cbcGraph, bmpGraph], // to control all charts together
   element: document.querySelector('#slider'),
   
 });
+
+
 
 
 // vitalsGraphTemp stuffs
@@ -137,7 +129,7 @@ var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
 });
 var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
   graph: vitalsGraphTemp,
-  legend: vitalsLegend
+  legend: vitalsLegend,
 });
 
 // vitalsGraphO2 stuffs
@@ -147,7 +139,7 @@ var detail1 = new Rickshaw.Graph.HoverDetail({
 });
 var vitalsLegend = new Rickshaw.Graph.Legend({
   graph: vitalsGraphO2,
-  element: document.querySelector('#vitals-legend2')
+  element: document.querySelector('#vitals-legend1')
 });
 var vitalsHighlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
   graph: vitalsGraphO2,
@@ -177,9 +169,9 @@ var cbcHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
   legend: cbcLegend
 });
 
-// bmpGraph stuff
+//bmpGraph stuff
 var detail3 = new Rickshaw.Graph.HoverDetail({
-  graph: bmpGraph
+  graph: bmpGraph,
 });
 var bmpLegend = new Rickshaw.Graph.Legend({
   graph: bmpGraph,
@@ -195,7 +187,86 @@ var bmbHighlighter = new Rickshaw.Graph.Behavior.Series.Toggle({
   legend: bmpLegend
 });
 
+
+
+
+// let's try annotator
+var message_events = [
+  { x:1426898100, y: 'nurse check'} ,
+  { x:1426899300, y: 'physician eval'} ,
+  { x:1426899900, y: 'orders entered'} ,
+  { x:1426901700, y: 'vitals'} ,
+  { x:1426904700, y: 'physician admit'} ,
+  { x:1426910400, y: 'admitted to floor'} ,
+  { x:1427031000, y: 'patient feels worse'} ,
+  { x:1427141400, y: 'patient feels better'} ,
+  { x:1427218200, y: 'discussion of discharge on oral antibiotics'} ,
+  { x:1427227200, y: 'to home'} ,
+]
+
+var message_xray = [
+  { x:1426899900, y: 'first x-ray pending'} ,
+  { x:1426904700, y: 'possible pneumonia ED read'} ,
+  { x:1426947000, y: 'final read pneumonia'} ,
+  { x:1427031000, y: 'second x-ray pending'} ,
+  { x:1427038200, y: '? Worse pneumonia'} ,
+  { x:1427051700, y: 'final read same'} ,
+  { x:1427112600, y: 'third x-ray pending'} ,
+  { x:1427126400, y: 'slight interval improvement'} ,
+  { x:1427141400, y: 'final read same'} ,
+ ]
+
+var message_therapy = [
+
+  { x:1426912200, y: 'first dose' } ,
+  { x:1426996800, y: 'second dose'} ,
+  { x:1427079600, y: 'adjust antibiotics switch to IV Cetriaxone bid'} ,
+  { x:1427141400, y: 'second dose'} ,
+  { x:1427162400, y: 'third dose'} ,
+  { x:1427207400, y: 'fourth dose'} ,
+  { x:1427227200, y: 'switch to oral for 10days'} ,
+ ]
+
+var message_bc = [
+{ x:1426899900, y: 'pending'} ,
+{ x:1426962600, y: 'clusters cocci gram stain'} ,
+{ x:1427079600, y: 'S. pneumo levaquin resistant culture sensitivity'} ,
+ ]
+
+var annotator_events = new Rickshaw.Graph.Annotate( {
+  graph: vitalsGraphTemp,
+  element: document.getElementById('timeline-events')
+} );
+
+var annotator_xray = new Rickshaw.Graph.Annotate( {
+  graph: vitalsGraphTemp,
+  element: document.getElementById('timeline-xray')
+} );
+var annotator_therapy = new Rickshaw.Graph.Annotate( {
+  graph: vitalsGraphTemp,
+  element: document.getElementById('timeline-therapy')
+} );
+var annotator_bc = new Rickshaw.Graph.Annotate( {
+  graph: vitalsGraphTemp,
+  element: document.getElementById('timeline-bc')
+} );
+function addAnnotation(ann, messages) {
+  var index = 0;
+  while (index < messages.length) {
+    ann.add(messages[index].x, messages[index].y);
+    ann.update();
+    index ++;
+  }
+}
+addAnnotation(annotator_events, message_events);
+addAnnotation(annotator_xray, message_xray);
+addAnnotation(annotator_therapy, message_therapy);
+addAnnotation(annotator_bc, message_bc);
+
 }); // document ready
+
+
+
 
 // dummy data
 
@@ -253,4 +324,21 @@ var wbcData = [
 { x:1427031000, y: 14.5} ,
 { x:1427112000, y: 12.1} ,
 { x:1427202900, y: 11.1} ,
+ ]
+
+
+var pltData = [
+{ x:1426904700, y: 20.1} ,
+{ x:1426947000, y: 21.5} ,
+{ x:1427031000, y: 22.5} ,
+{ x:1427112000, y: 17.1} ,
+{ x:1427202900, y: 14.1} ,
+ ]
+
+var rbcData = [
+{ x:1426904700, y: 18.1} ,
+{ x:1426947000, y: 19.5} ,
+{ x:1427031000, y: 20.5} ,
+{ x:1427112000, y: 18.1} ,
+{ x:1427202900, y: 13.1} ,
  ]
