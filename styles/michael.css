@@ -1,58 +1,107 @@
-#gridFrame {
-/*    background-color: #bcc;*/
-    padding-bottom: 10px;
-    /*border-radius: 0.25em;*/
-}
-.grid {
-    background-color: #555;
-    border: solid 1px #344;
-    overflow: auto;
-    font-size: 10px;
-    white-space: nowrap;
-}
-.grid > div {
-    box-sizing: border-box;
-    display: inline-block;
-    border-top: solid 1px rgba(255,255,255,0.3);
-    border-left: solid 1px rgba(255,255,255,0.3);
-    width: 40px;
-    height: 40px;
-    color: black;
-    font-size: larger;
+#msg_xray0 {
+    background: url('pic/xray_zoom2.jpg');
+    background-size: 100%;
+    height: 800px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
 }
 
-.grid > div:hover {
-    border: solid 2px rgba(0,0,0,1.0);
-    cursor: pointer;
+#msg_xray1 {
+    background: url('pic/xray_zoom2.jpg');
+    background-size: 100%;
+    height: 800px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
 }
 
-.alt0 {   
-
-    background-color: black;    }
-
+#msg_xray2 {
+    background: url('pic/xray_zoom3.jpg');
+    background-size: 100%;
+    height: 800px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
 }
 
+.msg_therapy {
+     background: url('pic/blood_culture.jpg');
+    background-size: 80%;
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
+}
+#msg_bc0 {
+    background: url('pic/blood_culture.jpg');
+    background-size: 80%;
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
+}
+#msg_bc1 {
+    background: url('pic/blood_culture.jpg');
+    background-size: 80%;
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 100px;
+}
 
-.alt1 {    background-color: red;    }
-.alt2 {    background-color: green;    }
-.alt3 {    background-color: #430;    }
-.alt4 {    background-color: #540;    }
-.alt5 {    background-color: #650;    }
-.alt6 {    background-color: #761;    }
-.alt7 {    background-color: #872;    }
-.alt8 {    background-color: #873;    }
-.alt9 {    background-color: #874;    }
-.alt10 {   background-color: #875;    }
+#msg_bc2 {
+    background: url('pic/blood_culture2.jpg');
+    background-size: 80%;
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    background-repeat: no-repeat;
+    top: 50px;
+}
 
-#xray {
-    display: none;
-    background-image: url('pic/xray_zoom2.jpg');
+#timeline-xray .annotation {
+    background: url('pic/xray_icon.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+#timeline-bc .annotation {
+    background: url('pic/blood_icon.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 550px;
-    width: 600px;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 30px;
+    margin-top: -4px;
+}
 
+#timeline-therapy .annotation {
+    background: url('pic/therapy.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 30px;
+    margin-top: -4px;
+}
+
+.annotation .content {
+    height: 1px;
+    width: 1px;
 }
 
 
+.other-title {
+    font-size: 30px;
+}
+
+#buffer {
+    height: 30px;
+    width: 100%;
+}
+/*cr 0.8 to 1.1*/

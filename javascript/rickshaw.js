@@ -1474,7 +1474,13 @@ Rickshaw.Graph.Axis.Time = function(args) {
 
 			var title = document.createElement('div');
 			title.classList.add('title');
-			title.innerHTML = o.unit.formatter(new Date(o.value * 1000));
+			d = new Date(o.value * 1000);
+			var options = {
+			    month: "short",
+			    day: "numeric", hour: "2-digit", minute: "2-digit",
+			};
+			title.innerHTML = d.toLocaleTimeString("en-us", options);
+			console.log(d);
 			element.appendChild(title);
 
 			self.graph.element.appendChild(element);
@@ -3252,7 +3258,7 @@ Rickshaw.Graph.Renderer.Bar = Rickshaw.Class.create( Rickshaw.Graph.Renderer, {
 	barWidth: function(series) {
 
 		var frequentInterval = this._frequentInterval(series.stack);
-		var barWidth = this.graph.x.magnitude(frequentInterval.magnitude) * (1 - this.gapSize) - 20;
+		var barWidth = this.graph.x.magnitude(frequentInterval.magnitude) * (1 - this.gapSize) - 80;
 
 		return barWidth;
 	},

@@ -72,7 +72,7 @@ body {
   width: 80%;
   height: 100%;
   float: right;
-  padding: 30px; }
+  padding: 10px 30px 30px 30px; }
   .chart-wrapper .column {
     height: 100%;
     display: inline-block; }
