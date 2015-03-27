@@ -1,0 +1,1232 @@
+[
+  {
+    "metric_type": "temp",
+    "time": "2014-01-01 11:33",
+    "units": "K",
+    "value": 25175.19
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-02 15:14",
+    "units": "K",
+    "value": 25097.17
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-03 11:10",
+    "units": "K",
+    "value": 25255.27
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-04 14:43",
+    "units": "K",
+    "value": 25371.51
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-05 12:12",
+    "units": "K",
+    "value": 25323.36
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-06 15:29",
+    "units": "K",
+    "value": 25376.05
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-07 16:43",
+    "units": "K",
+    "value": 25095.82
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-08 15:36",
+    "units": "K",
+    "value": 25198.43
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-09 12:15",
+    "units": "K",
+    "value": 25449.5
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-10 14:48",
+    "units": "K",
+    "value": 25398.29
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-11 09:47",
+    "units": "K",
+    "value": 25407.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-12 17:52",
+    "units": "K",
+    "value": 25326.43
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-13 19:57",
+    "units": "K",
+    "value": 25485.15
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-14 17:19",
+    "units": "K",
+    "value": 25298.08
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-15 08:31",
+    "units": "K",
+    "value": 25483.24
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-16 10:28",
+    "units": "K",
+    "value": 25221.29
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-17 10:47",
+    "units": "K",
+    "value": 25377.13
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-18 19:57",
+    "units": "K",
+    "value": 25322.99
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-19 16:46",
+    "units": "K",
+    "value": 25471.09
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-20 10:24",
+    "units": "K",
+    "value": 25329.65
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-21 13:53",
+    "units": "K",
+    "value": 25449.26
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-22 19:30",
+    "units": "K",
+    "value": 25427.8
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-23 19:33",
+    "units": "K",
+    "value": 25352.3
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-24 14:50",
+    "units": "K",
+    "value": 25385.26
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-25 15:21",
+    "units": "K",
+    "value": 25074.96
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-26 11:51",
+    "units": "K",
+    "value": 25243.29
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-27 16:00",
+    "units": "K",
+    "value": 25455.34
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-28 14:57",
+    "units": "K",
+    "value": 25179.63
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-29 17:55",
+    "units": "K",
+    "value": 25437.86
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-30 08:39",
+    "units": "K",
+    "value": 25289.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-01-31 08:11",
+    "units": "K",
+    "value": 25488.17
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-01 14:11",
+    "units": "K",
+    "value": 25275.02
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-02 09:51",
+    "units": "K",
+    "value": 25138.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-03 10:57",
+    "units": "K",
+    "value": 25396.23
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-04 11:50",
+    "units": "K",
+    "value": 25374.7
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-05 15:31",
+    "units": "K",
+    "value": 25418.9
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-06 08:11",
+    "units": "K",
+    "value": 25317.06
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-07 17:47",
+    "units": "K",
+    "value": 25098.09
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-08 11:34",
+    "units": "K",
+    "value": 25069.12
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-09 12:22",
+    "units": "K",
+    "value": 25279.02
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-10 19:03",
+    "units": "K",
+    "value": 25078.9
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-11 10:13",
+    "units": "K",
+    "value": 25212.85
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-12 17:13",
+    "units": "K",
+    "value": 25477.31
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-13 13:48",
+    "units": "K",
+    "value": 25287.85
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-14 13:53",
+    "units": "K",
+    "value": 25173.63
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-15 11:06",
+    "units": "K",
+    "value": 25046.45
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-16 11:01",
+    "units": "K",
+    "value": 25147.53
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-17 19:46",
+    "units": "K",
+    "value": 25133.76
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-18 15:12",
+    "units": "K",
+    "value": 25239.87
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-19 15:21",
+    "units": "K",
+    "value": 25098.66
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-20 08:08",
+    "units": "K",
+    "value": 25276.26
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-21 14:34",
+    "units": "K",
+    "value": 25145.68
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-22 12:54",
+    "units": "K",
+    "value": 25143.43
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-23 17:01",
+    "units": "K",
+    "value": 25444.18
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-24 14:10",
+    "units": "K",
+    "value": 25102.77
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-25 ",
+    "units": "K",
+    "value": 25230.19
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-26 ",
+    "units": "K",
+    "value": 25380.16
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-27 ",
+    "units": "K",
+    "value": 25182.42
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-02-28 ",
+    "units": "K",
+    "value": 25184.24
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-01 ",
+    "units": "K",
+    "value": 25370.77
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-02 ",
+    "units": "K",
+    "value": 25097.88
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-03 ",
+    "units": "K",
+    "value": 25038.83
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-04 ",
+    "units": "K",
+    "value": 25139.27
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-05 ",
+    "units": "K",
+    "value": 25055.43
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-06 ",
+    "units": "K",
+    "value": 25184.87
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-07 ",
+    "units": "K",
+    "value": 25339.35
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-08 ",
+    "units": "K",
+    "value": 25455.95
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-09 ",
+    "units": "K",
+    "value": 25384.25
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-10 ",
+    "units": "K",
+    "value": 25370.84
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-11 ",
+    "units": "K",
+    "value": 25112.57
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-12 ",
+    "units": "K",
+    "value": 25445.53
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-13 ",
+    "units": "K",
+    "value": 25235.25
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-14 ",
+    "units": "K",
+    "value": 25185.82
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-15 ",
+    "units": "K",
+    "value": 25382.36
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-16 ",
+    "units": "K",
+    "value": 25088.94
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-17 ",
+    "units": "K",
+    "value": 25174.09
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-18 ",
+    "units": "K",
+    "value": 25216.54
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-19 ",
+    "units": "K",
+    "value": 25404.91
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-20 ",
+    "units": "K",
+    "value": 25182.77
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-21 ",
+    "units": "K",
+    "value": 25477.38
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-22 ",
+    "units": "K",
+    "value": 25298.65
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-23 ",
+    "units": "K",
+    "value": 25350.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-24 ",
+    "units": "K",
+    "value": 25291.4
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-25 ",
+    "units": "K",
+    "value": 25362.45
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-26 ",
+    "units": "K",
+    "value": 25478.58
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-27 ",
+    "units": "K",
+    "value": 25208.56
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-28 ",
+    "units": "K",
+    "value": 25048.1
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-29 ",
+    "units": "K",
+    "value": 25111.52
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-30 ",
+    "units": "K",
+    "value": 25210.82
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-03-31 ",
+    "units": "K",
+    "value": 25480.81
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-01 ",
+    "units": "K",
+    "value": 25195.68
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-02 ",
+    "units": "K",
+    "value": 25199.16
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-03 ",
+    "units": "K",
+    "value": 25481.06
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-04 ",
+    "units": "K",
+    "value": 25134.27
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-05 ",
+    "units": "K",
+    "value": 25294.73
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-06 ",
+    "units": "K",
+    "value": 25205.64
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-07 ",
+    "units": "K",
+    "value": 25442.06
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-08 ",
+    "units": "K",
+    "value": 25097.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-09 ",
+    "units": "K",
+    "value": 25251.85
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-10 ",
+    "units": "K",
+    "value": 25350.04
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-11 ",
+    "units": "K",
+    "value": 25458.75
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-12 ",
+    "units": "K",
+    "value": 25155.72
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-13 ",
+    "units": "K",
+    "value": 25487.55
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-14 ",
+    "units": "K",
+    "value": 25364.95
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-15 ",
+    "units": "K",
+    "value": 25249.63
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-16 ",
+    "units": "K",
+    "value": 25309.42
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-17 ",
+    "units": "K",
+    "value": 25289.25
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-18 ",
+    "units": "K",
+    "value": 25418.92
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-19 ",
+    "units": "K",
+    "value": 25228.39
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-20 ",
+    "units": "K",
+    "value": 25255.99
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-21 ",
+    "units": "K",
+    "value": 25477.66
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-22 ",
+    "units": "K",
+    "value": 25479.36
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-23 ",
+    "units": "K",
+    "value": 25182.8
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-24 ",
+    "units": "K",
+    "value": 25299.14
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-25 ",
+    "units": "K",
+    "value": 25079.02
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-26 ",
+    "units": "K",
+    "value": 25145.25
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-27 ",
+    "units": "K",
+    "value": 25120.4
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-28 ",
+    "units": "K",
+    "value": 25438.48
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-29 ",
+    "units": "K",
+    "value": 25351.9
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-04-30 ",
+    "units": "K",
+    "value": 25295.52
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-01 ",
+    "units": "K",
+    "value": 25161.43
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-02 ",
+    "units": "K",
+    "value": 25159.07
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-03 ",
+    "units": "K",
+    "value": 25211.44
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-04 ",
+    "units": "K",
+    "value": 25435.25
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-05 ",
+    "units": "K",
+    "value": 25170.75
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-06 ",
+    "units": "K",
+    "value": 25204.67
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-07 ",
+    "units": "K",
+    "value": 25453.29
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-08 ",
+    "units": "K",
+    "value": 25399.58
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-09 ",
+    "units": "K",
+    "value": 25191.84
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-10 ",
+    "units": "K",
+    "value": 25291.31
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-11 ",
+    "units": "K",
+    "value": 25295.38
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-12 ",
+    "units": "K",
+    "value": 25039.2
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-13 ",
+    "units": "K",
+    "value": 25137.23
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-14 ",
+    "units": "K",
+    "value": 25480.62
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-15 ",
+    "units": "K",
+    "value": 25380.06
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-16 ",
+    "units": "K",
+    "value": 25480.97
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-17 ",
+    "units": "K",
+    "value": 25353.35
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-18 ",
+    "units": "K",
+    "value": 25415.13
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-19 ",
+    "units": "K",
+    "value": 25355.24
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-20 ",
+    "units": "K",
+    "value": 25386.76
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-21 ",
+    "units": "K",
+    "value": 25255.58
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-22 ",
+    "units": "K",
+    "value": 25033.01
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-23 ",
+    "units": "K",
+    "value": 25132.09
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-24 ",
+    "units": "K",
+    "value": 25075.98
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-25 ",
+    "units": "K",
+    "value": 25488.94
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-26 ",
+    "units": "K",
+    "value": 25413.81
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-27 ",
+    "units": "K",
+    "value": 25359.89
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-28 ",
+    "units": "K",
+    "value": 25342.52
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-29 ",
+    "units": "K",
+    "value": 25462.73
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-30 ",
+    "units": "K",
+    "value": 25182.18
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-05-31 ",
+    "units": "K",
+    "value": 25239.7
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-01 ",
+    "units": "K",
+    "value": 25194.82
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-02 ",
+    "units": "K",
+    "value": 25149.16
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-03 ",
+    "units": "K",
+    "value": 25302.01
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-04 ",
+    "units": "K",
+    "value": 25303.74
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-05 ",
+    "units": "K",
+    "value": 25073.19
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-06 ",
+    "units": "K",
+    "value": 25075.45
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-07 ",
+    "units": "K",
+    "value": 25409.32
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-08 ",
+    "units": "K",
+    "value": 25127.66
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-09 ",
+    "units": "K",
+    "value": 25205.29
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-10 ",
+    "units": "K",
+    "value": 25374.27
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-11 ",
+    "units": "K",
+    "value": 25395.12
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-12 ",
+    "units": "K",
+    "value": 25151.01
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-13 ",
+    "units": "K",
+    "value": 25165.21
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-14 ",
+    "units": "K",
+    "value": 25489.0
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-15 ",
+    "units": "K",
+    "value": 25277.69
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-16 ",
+    "units": "K",
+    "value": 25071.86
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-17 ",
+    "units": "K",
+    "value": 25123.97
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-18 ",
+    "units": "K",
+    "value": 25262.78
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-19 ",
+    "units": "K",
+    "value": 25113.32
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-20 ",
+    "units": "K",
+    "value": 25450.83
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-21 ",
+    "units": "K",
+    "value": 25212.28
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-22 ",
+    "units": "K",
+    "value": 25215.37
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-23 ",
+    "units": "K",
+    "value": 25169.33
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-24 ",
+    "units": "K",
+    "value": 25243.18
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-25 ",
+    "units": "K",
+    "value": 25154.21
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-26 ",
+    "units": "K",
+    "value": 25276.52
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-27 ",
+    "units": "K",
+    "value": 25417.48
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-28 ",
+    "units": "K",
+    "value": 25400.64
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-29 ",
+    "units": "K",
+    "value": 25286.74
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-06-30 ",
+    "units": "K",
+    "value": 25258.27
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-01 ",
+    "units": "K",
+    "value": 25364.03
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-02 ",
+    "units": "K",
+    "value": 25122.79
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-03 ",
+    "units": "K",
+    "value": 25481.42
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-04 ",
+    "units": "K",
+    "value": 25393.19
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-05 ",
+    "units": "K",
+    "value": 25247.85
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-06 ",
+    "units": "K",
+    "value": 25384.59
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-07 ",
+    "units": "K",
+    "value": 25070.64
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-08 ",
+    "units": "K",
+    "value": 25161.4
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-09 ",
+    "units": "K",
+    "value": 25405.76
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-10 ",
+    "units": "K",
+    "value": 25306.14
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-11 ",
+    "units": "K",
+    "value": 25305.48
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-12 ",
+    "units": "K",
+    "value": 25219.71
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-13 ",
+    "units": "K",
+    "value": 25485.04
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-14 ",
+    "units": "K",
+    "value": 25466.58
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-15 ",
+    "units": "K",
+    "value": 25211.97
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-16 ",
+    "units": "K",
+    "value": 25193.44
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-17 ",
+    "units": "K",
+    "value": 25356.38
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-18 ",
+    "units": "K",
+    "value": 25075.16
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-19 ",
+    "units": "K",
+    "value": 25272.37
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-20 ",
+    "units": "K",
+    "value": 25463.45
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-21 ",
+    "units": "K",
+    "value": 25045.98
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-22 ",
+    "units": "K",
+    "value": 25252.45
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-23 ",
+    "units": "K",
+    "value": 25451.7
+  },
+  {
+    "metric_type": "temp",
+    "time": "2014-07-24 ",
+    "units": "K",
+    "value": 25371.41
+  }
+]

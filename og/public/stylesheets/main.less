@@ -33,6 +33,9 @@ ul.nav-sidebar {
 .chart {
   width: 800px;
   margin: 0 auto;
+  svg {
+    margin: 0 auto;
+  }
 }
 
 div:not(#timeline) {
@@ -53,9 +56,12 @@ div:not(#timeline) {
   }
 
   svg {
+    width: 100%;
+    &:first-child {
+      width: 100%;
+    }
     g {
       stroke: #666;
-
       padding-top: 15px;
     }
   }
@@ -96,10 +102,10 @@ span.timeline-label {
     }
     .modal-label {
       padding: 10px;
-      width: 150px;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
-      color: #ff0000;
+      color: #ff4c4c;
       font-weight: 700;
       font-size: 24px;
     }
